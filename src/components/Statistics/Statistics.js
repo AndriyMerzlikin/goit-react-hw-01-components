@@ -1,9 +1,9 @@
-import { DataBlock, Datalist } from './Statistics.styled.js';
+import { DataBlock, Datalist, Title } from './Statistics.styled.js';
 
 export const Statistics = ({ stats, title }) => {
   return (
     <section>
-      {title ? <h2>Upload stats</h2> : null}
+      {title ? <Title>{title}</Title> : null}
 
       <Datalist>
         {stats.map(stat => (

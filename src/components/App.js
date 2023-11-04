@@ -16,13 +16,14 @@ export class App extends Component {
     statisticData: statistics,
     friendsData: friends,
     transactionsData: transactions,
+    title: 'Upload stats',
   };
 
   render() {
     return (
       <div>
         <Profile userData={this.state.profileData} />
-        <Statistics stats={this.state.statisticData} />
+        <Statistics stats={this.state.statisticData} title={this.state.title} />
         <FriendList friends={this.state.friendsData} />
         <TransactionHistory items={this.state.transactionsData} />
       </div>

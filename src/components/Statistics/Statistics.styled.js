@@ -21,5 +21,11 @@ function getRandomHexColor() {
 export const Datalist = styled.ul`
   list-style: none;
   display: flex;
+  justify-content: center;
   flex-direction: row;
+`;
+
+export const Title = styled.h2`
+  display: flex;
+  justify-content: center;
 `;
